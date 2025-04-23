@@ -9,8 +9,8 @@ group = "com.buzzebees.sdk"
 version = "1.0.0"
 
 gradlePlugin {
-    vcsUrl.set("https://github.com/BzbsAndroid/buzzebees-services-plugin")
-    website.set("https://github.com/BzbsAndroid/buzzebees-services-plugin")
+    vcsUrl.set("https://github.com/buzzebees/buzzebees-services-plugin")
+    website.set("https://github.com/buzzebees/buzzebees-services-plugin")
     plugins {
         create("services_plugin") {
             id = "com.buzzebees.sdk.services"
