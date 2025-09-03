@@ -29,7 +29,7 @@ publishing {
 
             groupId = "com.buzzebees.sdk"
             artifactId = "services"
-            version = "1.0.0"
+            version = "1.0.1"
         }
     }
 }

@@ -1,7 +1,7 @@
 # Buzzebees Services Plugins
 
 ## Overview
-`Buzzebees Services Plugins` is a Gradle Plugin designed to generate an XML file by reading values from `bezzebees-service.json` and registering the generated XML as a resource in an Android Project.
+`Buzzebees Services Plugins` is a Gradle Plugin designed to generate an XML file by reading values from `buzzebees-service.json` and registering the generated XML as a resource in an Android Project.
 
 ## Installation
 
@@ -25,8 +25,8 @@ plugins {
 
 ## Usage
 
-### 1. Add `bezzebees-service.json` to the Project
-Create a `bezzebees-service.json` file and include the required configuration values:
+### 1. Add `buzzebees-service.json` to the Project
+Create a `buzzebees-service.json` file and include the required configuration values:
 ```json
 {
   "AppId": "2952697274802274",
@@ -77,7 +77,7 @@ Example content of the generated `values.xml`:
 ```
 
 ## Debugging
-- Ensure the `bezzebees-service.json` file is in the correct location.
+- Ensure the `buzzebees-service.json` file is in the correct location.
 - Check the Gradle Console log to verify if the XML file was successfully generated.
 - Add `println` statements to debug the JSON values being read.
 
