@@ -10,7 +10,7 @@ Modify your **root `build.gradle.kts`** (or `build.gradle` for Groovy DSL) to in
 
 ```kotlin
 plugins {
-    id("com.buzzebees.sdk.services") version "1.0.0" apply false
+    id("com.buzzebees.sdk.services") version "1.0.1" apply false
 }
 ```
 
@@ -43,7 +43,11 @@ Create a `buzzebees-service.json` file and include the required configuration va
   "UrlSchemesMainProject": "beesbenefit",
   "WebMisc": "",
   "WebShoppingUrl": "https://shoppingcartproduct.buzzebees-dev.com/landing/buzzebeesdemo",
-  "WebURL": ""
+  "WebURL": "",
+  "EnvironmentName": "development",
+  "TokenHeaderType": "Bearer",
+  "AppName": "Buzzebees Demo",
+  "Theme": "light"
 }
 ```
 
@@ -73,7 +77,12 @@ Example content of the generated `values.xml`:
     <string name="web_misc" translatable="false"></string>
     <string name="web_shopping_url" translatable="false">https://shoppingcartproduct.buzzebees-dev.com/landing/buzzebeesdemo</string>
     <string name="web_url" translatable="false"></string>
+    <string name="environment_name" translatable="false">development</string>
+    <string name="token_header_type" translatable="false">Bearer</string>
+    <string name="app_name" translatable="false">Buzzebees Demo</string>
+    <string name="theme" translatable="false">light</string>
 </resources>
+
 ```
 
 ## Debugging

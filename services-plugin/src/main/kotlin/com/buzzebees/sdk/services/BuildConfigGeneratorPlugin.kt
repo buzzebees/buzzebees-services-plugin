@@ -139,7 +139,11 @@ class BuildConfigGeneratorPlugin : Plugin<Project> {
             "UrlSchemesMainProject" to jsonObject.optString("UrlSchemesMainProject", ""),
             "WebMisc" to jsonObject.optString("WebMisc", ""),
             "WebShoppingUrl" to jsonObject.optString("WebShoppingUrl", ""),
-            "WebURL" to jsonObject.optString("WebURL", "")
+            "WebURL" to jsonObject.optString("WebURL", ""),
+            "EnvironmentName" to jsonObject.optString("EnvironmentName", ""),
+            "TokenHeaderType" to jsonObject.optString("TokenHeaderType", ""),
+            "AppName" to jsonObject.optString("AppName", ""),
+            "Theme" to jsonObject.optString("Theme", "")
         )
 
         // Add all elements
