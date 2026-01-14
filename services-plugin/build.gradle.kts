@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "com.buzzebees.sdk"
-version = "1.0.1"
+version = "1.0.4"
 
 gradlePlugin {
     vcsUrl.set("https://github.com/buzzebees/buzzebees-services-plugin")
@@ -29,7 +29,7 @@ publishing {
 
             groupId = "com.buzzebees.sdk"
             artifactId = "services"
-            version = "1.0.2"
+            version = "1.0.4"
         }
     }
 }

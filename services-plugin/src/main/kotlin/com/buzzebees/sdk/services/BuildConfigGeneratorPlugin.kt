@@ -143,6 +143,9 @@ class BuildConfigGeneratorPlugin : Plugin<Project> {
             "EnvironmentName" to jsonObject.optString("EnvironmentName", ""),
             "TokenHeaderType" to jsonObject.optString("TokenHeaderType", ""),
             "AppName" to jsonObject.optString("AppName", ""),
+            "AppNameUrl" to jsonObject.optString("AppNameUrl", ""),
+            "DisplayName" to jsonObject.optString("DisplayName", ""),
+            "IsAutoUse" to jsonObject.optString("IsAutoUse", ""),
             "Theme" to jsonObject.optString("Theme", "")
         )
 
