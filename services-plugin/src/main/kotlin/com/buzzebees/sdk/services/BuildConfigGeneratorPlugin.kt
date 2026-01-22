@@ -146,7 +146,8 @@ class BuildConfigGeneratorPlugin : Plugin<Project> {
             "AppNameUrl" to jsonObject.optString("AppNameUrl", ""),
             "DisplayName" to jsonObject.optString("DisplayName", ""),
             "IsAutoUse" to jsonObject.optString("IsAutoUse", ""),
-            "Theme" to jsonObject.optString("Theme", "")
+            "Theme" to jsonObject.optString("Theme", ""),
+            "ApiVersion" to jsonObject.optString("ApiVersion", ""),
         )
 
         // Add all elements
