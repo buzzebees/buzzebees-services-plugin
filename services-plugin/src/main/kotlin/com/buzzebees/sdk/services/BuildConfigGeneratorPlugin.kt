@@ -58,7 +58,7 @@ class BuildConfigGeneratorPlugin : Plugin<Project> {
                     val jsonObject = JSONObject(configFile.readText())
                     generateXmlFile(valuesDir, jsonObject)
                     println("✅ config.json found at: ${configFile.absolutePath}")
-                } ?: println("❌ bezzebees-service.json NOT FOUND. Searched locations:")
+                } ?: println("❌ buzzebees-service.json NOT FOUND. Searched locations:")
             }
         }
 
@@ -139,7 +139,15 @@ class BuildConfigGeneratorPlugin : Plugin<Project> {
             "UrlSchemesMainProject" to jsonObject.optString("UrlSchemesMainProject", ""),
             "WebMisc" to jsonObject.optString("WebMisc", ""),
             "WebShoppingUrl" to jsonObject.optString("WebShoppingUrl", ""),
-            "WebURL" to jsonObject.optString("WebURL", "")
+            "WebURL" to jsonObject.optString("WebURL", ""),
+            "EnvironmentName" to jsonObject.optString("EnvironmentName", ""),
+            "TokenHeaderType" to jsonObject.optString("TokenHeaderType", ""),
+            "AppName" to jsonObject.optString("AppName", ""),
+            "AppNameUrl" to jsonObject.optString("AppNameUrl", ""),
+            "DisplayName" to jsonObject.optString("DisplayName", ""),
+            "IsAutoUse" to jsonObject.optString("IsAutoUse", ""),
+            "Theme" to jsonObject.optString("Theme", ""),
+            "ApiVersion" to jsonObject.optString("ApiVersion", ""),
         )
 
         // Add all elements
@@ -167,7 +175,7 @@ class BuildConfigGeneratorPlugin : Plugin<Project> {
     }
 
     companion object {
-        private const val SOURCE_TYPE = "bezzebees-service"
-        private const val JSON_FILE_NAME = "bezzebees-service.json"
+        private const val SOURCE_TYPE = "buzzebees-service"
+        private const val JSON_FILE_NAME = "buzzebees-service.json"
     }
 }

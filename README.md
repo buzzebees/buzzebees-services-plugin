@@ -1,7 +1,7 @@
 # Buzzebees Services Plugins
 
 ## Overview
-`Buzzebees Services Plugins` is a Gradle Plugin designed to generate an XML file by reading values from `bezzebees-service.json` and registering the generated XML as a resource in an Android Project.
+`Buzzebees Services Plugins` is a Gradle Plugin designed to generate an XML file by reading values from `buzzebees-service.json` and registering the generated XML as a resource in an Android Project.
 
 ## Installation
 
@@ -10,7 +10,7 @@ Modify your **root `build.gradle.kts`** (or `build.gradle` for Groovy DSL) to in
 
 ```kotlin
 plugins {
-    id("com.buzzebees.sdk.services") version "1.0.0" apply false
+    id("com.buzzebees.sdk.services") version "1.0.1" apply false
 }
 ```
 
@@ -25,8 +25,8 @@ plugins {
 
 ## Usage
 
-### 1. Add `bezzebees-service.json` to the Project
-Create a `bezzebees-service.json` file and include the required configuration values:
+### 1. Add `buzzebees-service.json` to the Project
+Create a `buzzebees-service.json` file and include the required configuration values:
 ```json
 {
   "AppId": "2952697274802274",
@@ -43,7 +43,11 @@ Create a `bezzebees-service.json` file and include the required configuration va
   "UrlSchemesMainProject": "beesbenefit",
   "WebMisc": "",
   "WebShoppingUrl": "https://shoppingcartproduct.buzzebees-dev.com/landing/buzzebeesdemo",
-  "WebURL": ""
+  "WebURL": "",
+  "EnvironmentName": "development",
+  "TokenHeaderType": "Bearer",
+  "AppName": "Buzzebees Demo",
+  "Theme": "light"
 }
 ```
 
@@ -73,11 +77,16 @@ Example content of the generated `values.xml`:
     <string name="web_misc" translatable="false"></string>
     <string name="web_shopping_url" translatable="false">https://shoppingcartproduct.buzzebees-dev.com/landing/buzzebeesdemo</string>
     <string name="web_url" translatable="false"></string>
+    <string name="environment_name" translatable="false">development</string>
+    <string name="token_header_type" translatable="false">Bearer</string>
+    <string name="app_name" translatable="false">Buzzebees Demo</string>
+    <string name="theme" translatable="false">light</string>
 </resources>
+
 ```
 
 ## Debugging
-- Ensure the `bezzebees-service.json` file is in the correct location.
+- Ensure the `buzzebees-service.json` file is in the correct location.
 - Check the Gradle Console log to verify if the XML file was successfully generated.
 - Add `println` statements to debug the JSON values being read.
 
